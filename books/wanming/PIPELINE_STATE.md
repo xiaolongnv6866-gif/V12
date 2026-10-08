@@ -1,17 +1,15 @@
-# 《晚明》 / cangjie完整工作流断点（2026-10-09 v0.1.0）
-- source_sha256: a8f3b43dcd496822cd384ac8e9aa85f7dc374f8430f06c6f8321c26825093082
+# 《晚明》cangjie阶段状态（v0.1.1 / 2026-10-09）
+
+- source_epub_sha256: a8f3b43dcd496822cd384ac8e9aa85f7dc374f8430f06c6f8321c26825093082
 - available_narrative_chapters: 571
-- literary_chapters_reviewed: 35
-- reviewed_ordinal_range: 1-35
-- next_chapter_ordinal: 36
-- unreviewed_chapters: 536
-- current_stage: 0 (Adler whole-book understanding, incomplete)
-- stage0_quality_gate: NOT_PASSED
-- official_BOOK_OVERVIEW: NOT_CREATED
-- user_stage0_confirmation: NOT_OBTAINED
-- stage1_extraction: NOT_STARTED
+- actual_literary_reviewed: 45
+- reviewed_ordinals: 1-45
+- next_narrative_ordinal: 46
+- unreviewed: 526
+- current_cangjie_phase: Stage0 IN_PROGRESS
+- stage0_BOOK_OVERVIEW: NOT_READY
+- stage0_original_criteria_and_user_confirmation: NOT_PASSED
 - stage1_5_verified_capabilities: 0
-- evidence: research/stage0/chapter-notes/wanming-0001-0002.md; wanming-0003-0005.md; wanming-0006-0010.md; wanming-0011-0015.md; wanming-0016-0020.md; wanming-0021-0025.md; wanming-0026-0030.md; wanming-0031-0035.md (all under same parent)
-- evidence_index: research/stage0/EVIDENCE_INDEX_0021_0035.csv
-- continuity_ledger: research/stage0/STATE_LEDGER_0021_0035.md
-- native_skill_install: waived_by_user (must still follow full pinned original workflows)
+- latest_notes: research/stage0/chapter-notes/wanming-0036-0040.md; research/stage0/chapter-notes/wanming-0041-0045.md
+- other_evidence: research/stage0/EVIDENCE_INDEX_0036_0045.csv; research/stage0/CROSSBOOK_0036_0045.md; research/stage0/STATE_LEDGER_0036_0045.md
+- original_skill_native_install: user_waived; follow_full_fixed_upstream_SKILL

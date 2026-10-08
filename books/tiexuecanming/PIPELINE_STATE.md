@@ -1,17 +1,15 @@
-# 《铁血残明》 / cangjie完整工作流断点（2026-10-09 v0.1.0）
-- source_sha256: 9100bbcdb9f52bcd5458cbda92e16b646489efbc00df5161ed568ebac83ffbaf
+# 《铁血残明》cangjie阶段状态（v0.1.1 / 2026-10-09）
+
+- source_epub_sha256: 9100bbcdb9f52bcd5458cbda92e16b646489efbc00df5161ed568ebac83ffbaf
 - available_narrative_chapters: 532
-- literary_chapters_reviewed: 35
-- reviewed_ordinal_range: 1-35
-- next_chapter_ordinal: 36
-- unreviewed_chapters: 497
-- current_stage: 0 (Adler whole-book understanding, incomplete)
-- stage0_quality_gate: NOT_PASSED
-- official_BOOK_OVERVIEW: NOT_CREATED
-- user_stage0_confirmation: NOT_OBTAINED
-- stage1_extraction: NOT_STARTED
+- actual_literary_reviewed: 45
+- reviewed_ordinals: 1-45
+- next_narrative_ordinal: 46
+- unreviewed: 487
+- current_cangjie_phase: Stage0 IN_PROGRESS
+- stage0_BOOK_OVERVIEW: NOT_READY
+- stage0_original_criteria_and_user_confirmation: NOT_PASSED
 - stage1_5_verified_capabilities: 0
-- evidence: research/stage0/chapter-notes/tiexue-0001-0002.md; tiexue-0003-0005.md; tiexue-0006-0010.md; tiexue-0011-0015.md; tiexue-0016-0020.md; tiexue-0021-0025.md; tiexue-0026-0030.md; tiexue-0031-0035.md (all under same parent)
-- evidence_index: research/stage0/EVIDENCE_INDEX_0021_0035.csv
-- continuity_ledger: research/stage0/STATE_LEDGER_0021_0035.md
-- native_skill_install: waived_by_user (must still follow full pinned original workflows)
+- latest_notes: research/stage0/chapter-notes/tiexue-0036-0040.md; research/stage0/chapter-notes/tiexue-0041-0045.md
+- other_evidence: research/stage0/EVIDENCE_INDEX_0036_0045.csv; research/stage0/CROSSBOOK_0036_0045.md; research/stage0/STATE_LEDGER_0036_0045.md
+- original_skill_native_install: user_waived; follow_full_fixed_upstream_SKILL
