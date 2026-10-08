@@ -22,3 +22,6 @@
 
 ## v0.1.5 新的研究断点与来源恢复（2026-10-09）
 V12已有两书各110章，共220/1103章的来源级逐章分析；下一章是**两书叙事序号#111**。原EPUB必须真实可读取；新上传的`research/epub_audit/rebuild_spine_portable.py`可以从用户原书重建无版权spine CSV（本地测试差异0），但完整生成CSV当前仍未上传仓库。仓颉Stage0整书检验未通过，具体`NEXT_ACTION.md`与`PROGRESS.md`。
+
+## v0.1.6 阅读断点（2026-10-09）
+已从用户原EPUB读至两书各叙事#120，合计**240/1103章**；下一新对话从两书各叙事**#121**继续。新研究卡与来源索引见`research/stage0/chapter-notes/*-0096-0120.md`（按5章分文件）、`EVIDENCE_INDEX_0096_0110.csv`和`EVIDENCE_INDEX_0111_0120.csv`。来源文件50/50哈希比对符合旧审计，尚不能据此宣称全部研究主张逐段核实。BOOK_OVERVIEW/Stage0门及用户确认均未完成；两套原始SKILL无需宿主安装但所有流程必须遵循。
