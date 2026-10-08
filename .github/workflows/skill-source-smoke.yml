@@ -1,0 +1,73 @@
+name: V12 upstream skill source smoke tests
+on:
+  push:
+    paths:
+      - '.github/workflows/skill-source-smoke.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  cangjie-original:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Fetch exact Cangjie original source
+        run: |
+          git clone --quiet https://github.com/kangarooking/cangjie-skill.git cangjie
+          cd cangjie
+          git checkout --quiet a28de55ba881b9928956a55048f743f7a9e3b23e
+          test "$(git rev-parse HEAD)" = "a28de55ba881b9928956a55048f743f7a9e3b23e"
+          test "$(git hash-object SKILL.md)" = "5d0c0b68425847eb12e7bf3d7109a4d63db42fa3"
+      - name: Run upstream doctor and full unit regression
+        run: |
+          cd cangjie
+          python3 -m venv .v12venv
+          .v12venv/bin/python -m pip -q install pyyaml jsonschema
+          .v12venv/bin/python scripts/cangjie.py doctor
+          .v12venv/bin/python -m unittest discover -s tests -v
+
+  nuwa-original:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Fetch exact Nuwa original source
+        run: |
+          git clone --quiet https://github.com/alchaincyf/nuwa-skill.git nuwa
+          cd nuwa
+          git checkout --quiet fe0374687037c4cc51a65c1e0c145afe2981dc69
+          test "$(git rev-parse HEAD)" = "fe0374687037c4cc51a65c1e0c145afe2981dc69"
+          test "$(git hash-object SKILL.md)" = "788669b7b2ab755ae04d6585c28beeacedda41f2"
+          test "$(git hash-object scripts/quality_check.py)" = "e84d9edd3c4dc6289c598b55d150c59f8bdef87f"
+      - name: Run original quality checker on positive and negative fixtures
+        run: |
+          cd nuwa
+          python3 -m py_compile scripts/quality_check.py scripts/merge_research.py scripts/srt_to_transcript.py
+          cat > /tmp/v12-good.md <<'EOF'
+          # Synthetic fixture, NOT an actual writing Skill
+          ## 心智模型
+          ### 模型1: 检查
+          ### 模型2: 取证
+          ### 模型3: 推理
+          ## 模型局限性
+          失效条件须申明。
+          ## 表达DNA
+          句式明确；词汇朴素；节奏稳定。
+          ## 诚实边界
+          - 不编造证据
+          - 不把描述说成测试
+          - 不冒称真人
+          ## 内在张力
+          一方面重细节另一方面重速度。另有张力。
+          ## 来源
+          一手 原始 一手
+          二手
+          EOF
+          printf 'This is intentionally invalid.\n' > /tmp/v12-bad.md
+          python3 scripts/quality_check.py /tmp/v12-good.md
+          if python3 scripts/quality_check.py /tmp/v12-bad.md; then
+            echo 'ERROR: negative fixture unexpectedly passed' >&2
+            exit 1
+          fi
+          echo 'Nuwa smoke tests PASS (does not certify V12 writing skill)'
