@@ -27,3 +27,13 @@
 - new_arc: research/stage0/arcs/TIEXUE_ARC_0121_0135.md
 - new_evidence: research/stage0/EVIDENCE_INDEX_0121_0135.csv
 - original_stage0_adler: IN_PROGRESS; book_overview: NOT_READY; quality_gate: NOT_PASSED; user_confirmation: NOT_OBTAINED
+
+
+## v0.1.9 event-arc continuation
+- current_full_text_reviewed_contiguous: 1-150
+- actual_researched_chapters: 150 / 532
+- next_narrative_ordinal: 151
+- remaining: 382
+- last_arc: research/stage0/arcs/TIEXUE_ARC_0136_0150.md
+- source_index: research/stage0/EVIDENCE_INDEX_0136_0150.csv
+- cangjie_stage0: IN_PROGRESS; original_gate: NOT_PASSED; user_confirmation: NOT_OBTAINED
