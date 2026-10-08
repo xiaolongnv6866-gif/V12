@@ -13,3 +13,5 @@
 
 - audit_2026_10_09: source_file_sha256_and_anchor_check_15_of_15_PASS; independent_detailed_notes_13_of_15; opening_1_2_need_individual_cards; narrative_15_ending_omission_logged; stage0_original_gate_0_of_6_passed
 - audit_report: research/audits/OPENING_30_STAGE0_AUDIT_2026-10-09.md
+
+- audit_P0_2026_10_09: opening_1_2_individual_cards_written; narrative_15_ending_and_change_returned_synced; 15_of_15_have_individual_entries; stage0_gate_NOT_PASSED
