@@ -12,3 +12,5 @@
 - 2026-10-09 D-009：因平均逐章长卡耗时过高，接受用户批准的“全书结构优先、关键场景精研”。分开TOC_INDEXED、STRUCTURAL_SAMPLE、FULL_TEXT_REVIEWED、SCENE_DEEP_DIVE、VERIFIED_CAPABILITY；抽样及索引不计全文已读。仓颉和女娲原版全流程及用户确认不减少，见research/stage0/STAGE0_TIERED_EXECUTION.md。
 
 - 2026-10-09 D-010：分层方法在#121—135首轮由STRUCTURAL_SAMPLE经原书连续复读和事件弧研究升级为FULL_TEXT_REVIEWED；保留原文件SHA+章段锚点和两部原著独立故事弧，不再平均填五章长卡。Stage0最终阅读完整性与用户确认门仍强制。
+
+- 2026-10-09 D-011：按原版Cangjie及Nuwa实地反向审计，**阶段0未过绝不进入阶段1**。仓库“申报全文研读300章”和“已独立验证研读质量”分开；阶段门与独立新小说写作测试不得由源码单测、SHA或章节数替代。Nuwa主题路径尚是建议，需要Phase0正式确定。依研究审计报告和R01—R32控制轮续跑。
