@@ -1,0 +1,13 @@
+# 不得提交版权作品全文、电子书或临时解压文本
+*.epub
+*.pdf
+/raw_books/
+/source_text/
+/raw_text/
+/private_sources/
+__pycache__/
+*.pyc
+.env
+.env.*
+*.key
+*.pem
