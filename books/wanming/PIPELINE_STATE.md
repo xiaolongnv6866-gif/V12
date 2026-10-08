@@ -18,3 +18,13 @@
 - source_mapping: narrative ordinal mapping must come from spine; volume restarts at #52 and #106, do not guess paths arithmetically
 - quality_debt: I-015 paragraph_to_claim citations for some #096-110 notes
 - native_install: waived_by_user_original_skill_workflows_still_mandatory
+
+
+## v0.1.8 正文事件弧升级
+- current_full_text_reviewed_contiguous: 1-135
+- actual_researched_chapters: 135 / 571
+- next_narrative_ordinal: 136
+- remaining: 436
+- new_arc: research/stage0/arcs/WANMING_ARC_0121_0135.md
+- new_evidence: research/stage0/EVIDENCE_INDEX_0121_0135.csv
+- original_stage0_adler: IN_PROGRESS; book_overview: NOT_READY; quality_gate: NOT_PASSED; user_confirmation: NOT_OBTAINED

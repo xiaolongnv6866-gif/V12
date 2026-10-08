@@ -10,3 +10,5 @@
 - 2026-10-08 D-008（覆盖D-004的前置含义）：用户明确指定**无需原生安装两套SKILL，只要求按固定上游原版源码完整、真实、可验证地执行，并能从V12 GitHub在新会话恢复**。保留“源码可执行≠原生安装”的事实区分，但原生安装不再是研究或交付必要条件；其余阶段和测试、人工确认要求不豁免。执行契约：research/skills/NO_INSTALL_SKILL_EXECUTION.md。
 
 - 2026-10-09 D-009：因平均逐章长卡耗时过高，接受用户批准的“全书结构优先、关键场景精研”。分开TOC_INDEXED、STRUCTURAL_SAMPLE、FULL_TEXT_REVIEWED、SCENE_DEEP_DIVE、VERIFIED_CAPABILITY；抽样及索引不计全文已读。仓颉和女娲原版全流程及用户确认不减少，见research/stage0/STAGE0_TIERED_EXECUTION.md。
+
+- 2026-10-09 D-010：分层方法在#121—135首轮由STRUCTURAL_SAMPLE经原书连续复读和事件弧研究升级为FULL_TEXT_REVIEWED；保留原文件SHA+章段锚点和两部原著独立故事弧，不再平均填五章长卡。Stage0最终阅读完整性与用户确认门仍强制。
