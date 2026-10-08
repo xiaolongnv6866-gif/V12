@@ -1,17 +1,16 @@
-# 《铁血残明》cangjie Stage0运行断点（v0.1.4 / 2026-10-09）
+# 《铁血残明》cangjie Stage0原始进度（v0.1.5 / 2026-10-09）
 
 - source_epub_sha256: 9100bbcdb9f52bcd5458cbda92e16b646489efbc00df5161ed568ebac83ffbaf
-- source_epub_narrative_chapters: 532
-- actually_read_chapters: 95
-- researched_ordinals: 1-95
-- next_narrative_ordinal: 96
-- chapters_unread: 437
-- current_original_cangjie_phase: Stage0_Adler_reading_IN_PROGRESS
-- stage0_BOOK_OVERVIEW: NOT_READY
-- stage0_original_quality_gate: NOT_PASSED
-- user_confirmation_to_enter_stage1: NOT_OBTAINED
-- original_nuwa_phase_completion: NOT_VERIFIED
+- valid_narrative_chapters: 532
+- literary_research_chapters_completed: 110
+- researched_narrative_ordinals: 1-110
+- next_narrative_ordinal: 111
+- unreviewed_chapters: 422
+- source_spine_rebuilder: research/epub_audit/rebuild_spine_portable.py (locally tested, zero field discrepancies)
+- source_index_last: research/stage0/EVIDENCE_INDEX_0096_0110.csv
+- last_chapter_notes: research/stage0/chapter-notes/tiexue-0096-0100.md; tiexue-0101-0105.md; tiexue-0106-0110.md
+- stage0_BOOK_OVERVIEW: NOT_READY; full-book analysis IN_PROGRESS
+- stage0_quality_gate: NOT_PASSED; stage1_user_confirmation: NOT_OBTAINED
 - stage1_5_verified_capabilities: 0
-- source_evidence_index: research/stage0/EVIDENCE_INDEX_0071_0095.csv
-- latest_chapter_cards: research/stage0/chapter-notes/tiexue-0071-0075.md; tiexue-0076-0080.md; tiexue-0081-0085.md; tiexue-0086-0090.md; tiexue-0091-0095.md
-- native_SKILL_install: waived_by_user; pinned_upstream_original_workflows_still_mandatory
+- nuwa_final_verified_skills: 0
+- native_skill_install: waived_by_user; full_original_workflow_required

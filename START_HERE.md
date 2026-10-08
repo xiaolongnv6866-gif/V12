@@ -18,3 +18,7 @@
 
 ## v0.0.7 关键质量审计（2026-10-09）
 **在继续30章之后的文学研究前先读取** `research/audits/OPENING_30_STAGE0_AUDIT_2026-10-09.md` 和 `research/audits/CORRECTIONS_0001_0015.md`。有效30章研究覆盖基线保留；有独立较细记录26章，前4章需补单章笔记；两书仓颉Stage0整书质量门均未通过。锚点见`research/audits/OPENING_30_EVIDENCE_INDEX.csv`，下一章各#016。无需原生安装，两套原版仍按固定源码完整执行。
+
+
+## v0.1.5 新的研究断点与来源恢复（2026-10-09）
+V12已有两书各110章，共220/1103章的来源级逐章分析；下一章是**两书叙事序号#111**。原EPUB必须真实可读取；新上传的`research/epub_audit/rebuild_spine_portable.py`可以从用户原书重建无版权spine CSV（本地测试差异0），但完整生成CSV当前仍未上传仓库。仓颉Stage0整书检验未通过，具体`NEXT_ACTION.md`与`PROGRESS.md`。
