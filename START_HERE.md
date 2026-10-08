@@ -1,16 +1,16 @@
-# V12 新会话唯一恢复入口
+# V12 新会话唯一恢复入口（v0.0.6）
 
-1. **先读取** PROJECT_SPEC.md、PROGRESS.md、NEXT_ACTION.md、DECISIONS.md、ISSUES.md。
-2. 验证当前GitHub连接的读/写权限和本仓库最新提交；不得以对话记忆为项目事实。
-3. 检查 cangjie-skill 与 nuwa-skill **在当前执行环境中是否真实安装**。读取原始入口与所有需要的依赖；仅能访问GitHub源码≠已经安装。
-4. 检查两本 EPUB 在当前会话是否实际可读。对照 research/epub_audit/SUMMARY.md 中的 SHA-256；如果无文件，请用户重新提供，**不可凭索引伪造正文证据**。
-5. 读取两本书对应的 books/*/PIPELINE_STATE.md，按照原SKILL必经阶段继续。阶段0需要全书阅读和用户骨架确认；没有通过不能进入阶段1。
-6. 正式创作只在最终原创SKILL经实测与恢复测试通过后启用。此时应另行读取未来的创作恢复入口及原创小说状态；当前**尚不存在可激活的正式创作SKILL**。
+**第一条：原SKILL无需原生安装。** 用户已明确授权**直接使用原版源码完整执行**，详情 `research/skills/NO_INSTALL_SKILL_EXECUTION.md`。请不要再次把“当前ChatGPT未注册仓颉/女娲”作为研究停止的理由，也不得谎称它们已安装。
 
-文件权威分层：PROJECT_SPEC.md及DECISIONS.md=项目规则；PIPELINE_STATE.md和PROGRESS.md=已验证执行状态；research/=证据与候选；tests/=测试资料；正式SKILL另行发布且须标版号。绝不把候选当成正式能力。
+## 恢复顺序
+1. 读取 `PROJECT_SPEC.md`、`DECISIONS.md`、`PROGRESS.md`、`NEXT_ACTION.md`、`ISSUES.md`，核实本仓库main最新提交并以已验证状态为事实基础。**不依赖V10/V11任何资料**。
+2. 读取 `research/skills/NO_INSTALL_SKILL_EXECUTION.md` 和 `research/skills/SOURCE_REGISTRY.md`。从其中锁定的**两个Git commit**分别获取cangjie/nuwa原版完整SKILL.md及当前阶段要求的所有引用文件、模板、脚本与模式，而非套用自己编写的摘要。必要时再次核对入口Git blob。
+3. 原版仓颉脚本GitHub CI`doctor PASS`且26/26 unit test；女娲原版quality_check正反合成样本判断正确，证据在 `research/skills/RUNTIME_AUDIT_2026-10-08.md`。这是**源码可执行证据**，不是原生安装也不是正式V12写作SKILL通过。
+4. 确认两本EPUB真正可读取，与 `research/epub_audit/SUMMARY.md` SHA256一致。缺原著时不得依据索引伪造研究。当前GitHub没有全书原文；详细CSV本地副本尚未入库。
+5. 分别读取 `books/wanming/PIPELINE_STATE.md`、`books/tiexuecanming/PIPELINE_STATE.md`，从真实章节断点依原始cangjie Stage0及nuwa相应阶段推进，不跳过作者规定的用户确认门。
+6. 在一轮结束时更新 `PROGRESS.md`、`NEXT_ACTION.md`、相关阶段文件，提交Github并回读验证。按照真实证据汇报“已做/未做/失败”。
 
-不使用旧V10/V11小说剧情、分析、任务状态或存储。
+## 优先入口
+简短可复制的重新启动提示词见 `RESTART_PROMPT.md`。需要详尽实施规则读 `research/skills/NO_INSTALL_SKILL_EXECUTION.md`。
 
-
-## 原始SKILL核验状态（v0.0.5）
-先读 `research/skills/RUNTIME_AUDIT_2026-10-08.md` 与 `research/skills/HOST_ACTIVATION.md`：**GitHub Runner原版仓颉doctor+26 tests和女娲质量脚本已过；当前ChatGPT技能列表仍未安装两者**。不要用成功CI宣称当前Agent已具备按名原生调用。原著研究仍30/1103章，后续从两书#016继续。
+**目前已证实的研究基线**：两书各15章、总30/1103，下一章节各#016，仓颉Stage0未通过，正式原创SKILL 0份验收。将来以远程最新提交为准。

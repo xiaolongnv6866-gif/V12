@@ -18,3 +18,11 @@
 - **I-008（部分解除）**：原版仓颉在GitHub Runner`doctor PASS`及26项unit test全过；Nuwa原版质量脚本正反样本符合预期。正式V12 Capability Bundle尚不存在、不能做真实compile和完整Agent输出评测。
 - **I-009（新，未解决）**：容器到github.com的DNS不可达；通过GitHub插件可操作仓库，确定性脚本在GitHub Actions隔离Runner可运行，但用户原书不得送至公开CI。目标宿主的实际技能触发测试尚未进行。
 - 运行记录：https://github.com/xiaolongnv6866-gif/V12/actions/runs/37803997027；全文`research/skills/RUNTIME_AUDIT_2026-10-08.md`。
+
+
+## v0.0.6 用户决策对阻碍的正式处置
+- **I-001：关闭为“已获豁免，不阻断原流程研究”**。当前宿主没有原生注册仍是真实事实，但用户明确不要求安装；执行改用固定GitHub源码读取+真实脚本环境。将“是否已安装”当成新的强制阻碍是错误的。
+- **I-006：降级为来源沿袭信息缺失、非阻断**。无法确认用户以往装的版本；V12明确固定公开上游两个Git提交，后续只依此执行。不得含糊称以前安装版已验证。
+- **I-008：部分完成**。仓颉doctor与26项测试以及女娲原版质量脚本的合成测试已通过，但具体V12产物的编译和真任务测试仍将随正式工作阶段开展。
+- **I-005继续未解决**，GitHub尚无完整spine CSV；项目EPUB在新会话中的可读性必须核实。
+- 新的无安装运行及跨会话契约：`research/skills/NO_INSTALL_SKILL_EXECUTION.md`，用户最简重新启动说明：`RESTART_PROMPT.md`。
