@@ -14,3 +14,7 @@
 简短可复制的重新启动提示词见 `RESTART_PROMPT.md`。需要详尽实施规则读 `research/skills/NO_INSTALL_SKILL_EXECUTION.md`。
 
 **目前已证实的研究基线**：两书各15章、总30/1103，下一章节各#016，仓颉Stage0未通过，正式原创SKILL 0份验收。将来以远程最新提交为准。
+
+
+## v0.0.7 关键质量审计（2026-10-09）
+**在继续30章之后的文学研究前先读取** `research/audits/OPENING_30_STAGE0_AUDIT_2026-10-09.md` 和 `research/audits/CORRECTIONS_0001_0015.md`。有效30章研究覆盖基线保留；有独立较细记录26章，前4章需补单章笔记；两书仓颉Stage0整书质量门均未通过。锚点见`research/audits/OPENING_30_EVIDENCE_INDEX.csv`，下一章各#016。无需原生安装，两套原版仍按固定源码完整执行。

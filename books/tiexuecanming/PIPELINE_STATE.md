@@ -10,3 +10,6 @@
 - evidence_paths: research/stage0/OPENING_PILOT.md; research/stage0/chapter-notes/tiexue-0003-0005.md; research/stage0/chapter-notes/tiexue-0006-0010.md; research/stage0/chapter-notes/tiexue-0011-0015.md
 - next: read #16 onward; 517 chapters not yet reviewed; complete Adler stage0 and obtain confirmation
 - downstream_verified_capabilities: 0
+
+- audit_2026_10_09: source_file_sha256_and_anchor_check_15_of_15_PASS; independent_detailed_notes_13_of_15; opening_1_2_need_individual_cards; narrative_15_ending_omission_logged; stage0_original_gate_0_of_6_passed
+- audit_report: research/audits/OPENING_30_STAGE0_AUDIT_2026-10-09.md
