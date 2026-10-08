@@ -10,3 +10,7 @@
 文件权威分层：PROJECT_SPEC.md及DECISIONS.md=项目规则；PIPELINE_STATE.md和PROGRESS.md=已验证执行状态；research/=证据与候选；tests/=测试资料；正式SKILL另行发布且须标版号。绝不把候选当成正式能力。
 
 不使用旧V10/V11小说剧情、分析、任务状态或存储。
+
+
+## 原始SKILL核验状态（v0.0.5）
+先读 `research/skills/RUNTIME_AUDIT_2026-10-08.md` 与 `research/skills/HOST_ACTIVATION.md`：**GitHub Runner原版仓颉doctor+26 tests和女娲质量脚本已过；当前ChatGPT技能列表仍未安装两者**。不要用成功CI宣称当前Agent已具备按名原生调用。原著研究仍30/1103章，后续从两书#016继续。

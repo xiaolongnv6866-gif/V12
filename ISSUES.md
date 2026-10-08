@@ -10,3 +10,11 @@
 | I-006 | 中 | 公共候选版本未证明与用户曾安装的版本一致 | 确认真实安装路径及提交SHA | 待确认 |
 | I-007 | 高 | 只实际研究10章，其余1093章未研究 | 原SKILL阶段0继续分批阅读和记录 | 持续 |
 | I-008 | 中 | 仓颉后续编译器/Schema虽发现路径但尚未运行和验证依赖 | 在相关阶段前逐项读取、doctor和测试 | 未解决 |
+
+
+## v0.0.5 复核结论
+- **I-001（未解决）**：已用`skills__list`与`skills__read`双重确认当前ChatGPT宿主并未注册两套SKILL。源码存在和CI通过不能代替安装，暂无本宿主可用的技能安装/注册动作。
+- **I-006（未解决）**：没有用户此前其他宿主安装版本的路径或commit。项目现已固定两套**公开候选**的完整commit，可用于以后复现，但不能倒推此前版本。
+- **I-008（部分解除）**：原版仓颉在GitHub Runner`doctor PASS`及26项unit test全过；Nuwa原版质量脚本正反样本符合预期。正式V12 Capability Bundle尚不存在、不能做真实compile和完整Agent输出评测。
+- **I-009（新，未解决）**：容器到github.com的DNS不可达；通过GitHub插件可操作仓库，确定性脚本在GitHub Actions隔离Runner可运行，但用户原书不得送至公开CI。目标宿主的实际技能触发测试尚未进行。
+- 运行记录：https://github.com/xiaolongnv6866-gif/V12/actions/runs/37803997027；全文`research/skills/RUNTIME_AUDIT_2026-10-08.md`。
