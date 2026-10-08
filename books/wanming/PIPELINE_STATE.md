@@ -1,10 +1,12 @@
 # 晚明：cangjie PIPELINE_STATE
 - source_sha256: a8f3b43dcd496822cd384ac8e9aa85f7dc374f8430f06c6f8321c26825093082
 - available_narrative_chapters: 571
-- narrative_chapters_literarily_reviewed: 2
+- narrative_chapters_literarily_reviewed: 5
+- reviewed_chapter_ordinals: [1,2,3,4,5]
 - current_phase: 0 (in progress; NOT passed)
 - completed_phase: none
-- phase0_file: BOOK_OVERVIEW.md (not yet created; not enough whole-book evidence)
+- phase0_file: BOOK_OVERVIEW.md (not yet created; whole-book evidence insufficient)
 - user_phase0_confirmation: not obtained
-- next: read remaining narrative in six volumes; stage0 structural, interpretive, critical and applicability proof; quality gate; present to user
-- downstream_candidate_state: none; never treat pilot as verified
+- reading_evidence: research/stage0/OPENING_PILOT.md; research/stage0/chapter-notes/wanming-0003-0005.md
+- next: read remaining 566 narrative chapters, Adler full Stage0 and user quality-gate confirmation
+- downstream_candidate_state: none, never treat preliminary mechanisms as verified

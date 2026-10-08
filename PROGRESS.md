@@ -1,21 +1,20 @@
 # V12 实际进度
 
-核查日期：2026-10-08。**不采用主观完成百分比。**
+核查日期：2026-10-08；对应研究提交 v0.0.2。**不报告主观完成百分比。**
 
-| 工作单元 | 状态 | 实际证据 |
+| 工作单元 | 状态 | 可复核证据 |
 |---|---|---|
-| V12 GitHub 仓库 | 读+写权限经API核验；提交后复核待记录 | main 初始只有5字节 README |
-| cangjie-skill | 当前已安装技能目录未找到；公开候选源码可读取 | kangarooking/cangjie-skill, SKILL.md, v2.5.0 |
-| nuwa-skill | 当前已安装技能目录未找到；公开候选源码可读取 | alchaincyf/nuwa-skill, SKILL.md (name: huashu-nuwa) |
-| 晚明 EPUB | ZIP CRC / OPF / spine / 文本提取初步核验通过 | SHA256 a8f3b43dcd496822cd384ac8e9aa85f7dc374f8430f06c6f8321c26825093082 |
-| 铁血残明 EPUB | ZIP CRC / OPF / spine / 文本提取初步核验通过 | SHA256 9100bbcdb9f52bcd5458cbda92e16b646489efbc00df5161ed568ebac83ffbaf |
-| 完成 EPUB 目录定位 | 已完成结构索引 | 晚明571叙事章；铁血残明532叙事章 |
-| 实际阅读并初步分析 | **4 / 1103章** | 两本书各自第一、第二叙事章；详见OPENING_PILOT |
-| 两书 cangjie 阶段0 | 未通过；仅有前置结构与4章试读 | 未完成全书骨架及用户确认 |
-| nuwa 正式蒸馏 | 未开始 | 需核实安装及完整相关脚本、设定主题变体 |
-| 正式V12原创SKILL | 0个通过验收 | 未构建 |
-| 正式原创小说 | 未开始 | 项目禁止提前写正文 |
+| V12 GitHub | API读写及两次提交验证 | main仓库提交链，详见CHANGELOG |
+| cangjie-skill | 16项主文/流程/提取器/阶段0模板源码已完整读取；已安装状态未验证 | research/skills/SOURCE_REGISTRY.md |
+| nuwa-skill | 8项入口/参考/脚本源码已完整读取；已安装状态未验证 | research/skills/SOURCE_REGISTRY.md |
+| 两本EPUB | ZIP CRC、OPF、spine、提取与SHA-256核验 | research/epub_audit/SUMMARY.md |
+| 全部有效章的结构定位 | **1103/1103** | 晚明571、铁血残明532；完整CSV在本次本地审计包中 |
+| 逐章实际文学研读 | **10/1103** | 每书前五叙事章；OPENING_PILOT + chapter-notes/ |
+| 晚明 cangjie阶段0 | 阅读5/571；质量门未达标 | books/wanming/PIPELINE_STATE.md |
+| 铁血残明 cangjie阶段0 | 阅读5/532；质量门未达标 | books/tiexuecanming/PIPELINE_STATE.md |
+| nuwa正式蒸馏 | 未开始 | 未达到其完整前置条件 |
+| V12正式原创SKILL | 0份通过验收 | 尚未构建 |
+| 原创小说正文 | 未开始 | 按规定不得先行 |
 
-**计数口径**：1103=571+532；程序遍历每章文字以建立索引 **不等于模型读完并做文学研究**。
-
-本次其余未决事项见 ISSUES.md。
+**计数规则**：程序遍历1110余段XHTML解析标题和正文长度只是结构索引；只有实际阅读并编制章节因果/人物/叙事判断记录才计入10章。
+**完整目录文件**：本会话本地 `V12-EPUB-AUDIT-v0.0.1.zip` 含两本全spine CSV、manifest JSON及重跑脚本；仓库暂只保存摘要，待解决原始CSV上传路径（I-005）。
