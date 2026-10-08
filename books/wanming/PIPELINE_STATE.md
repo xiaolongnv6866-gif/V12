@@ -1,17 +1,16 @@
-# 晚明：cangjie PIPELINE_STATE
+# 《晚明》 cangjie PIPELINE_STATE
+
 - source_sha256: a8f3b43dcd496822cd384ac8e9aa85f7dc374f8430f06c6f8321c26825093082
 - available_narrative_chapters: 571
-- narrative_chapters_literarily_reviewed: 15
-- reviewed_chapter_ordinals: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
-- current_phase: 0 (in progress; NOT passed)
-- completed_phase: none
-- phase0_file: BOOK_OVERVIEW.md (not yet created; whole-book evidence insufficient)
-- user_phase0_confirmation: not obtained
-- evidence_paths: research/stage0/OPENING_PILOT.md; research/stage0/chapter-notes/wanming-0003-0005.md; research/stage0/chapter-notes/wanming-0006-0010.md; research/stage0/chapter-notes/wanming-0011-0015.md
-- next: read #16 onward; 556 chapters not yet reviewed; complete Adler stage0 and obtain confirmation
-- downstream_verified_capabilities: 0
-
-- audit_2026_10_09: source_file_sha256_and_anchor_check_15_of_15_PASS; independent_detailed_notes_13_of_15; opening_1_2_need_individual_cards; stage0_original_gate_0_of_6_passed
-- audit_report: research/audits/OPENING_30_STAGE0_AUDIT_2026-10-09.md
-
-- audit_P0_2026_10_09: opening_1_2_individual_cards_written; 15_of_15_have_individual_entries; later_13_chapter_claims_need_stronger_paragraph_corroboration; stage0_gate_NOT_PASSED
+- literarily_reviewed_chapter_count: 20
+- reviewed_ordinals: 1-20
+- independent_chapter_records: 1-20（前两章于v0.0.8补写）
+- current_phase: stage0_adler_IN_PROGRESS
+- stage0_book_overview: NOT_CREATED（未达到整书证据）
+- original_stage0_quality_gate: NOT_PASSED
+- user_confirmation_for_stage1: NOT_OBTAINED
+- next_chapter: 21
+- remaining_chapters: 551
+- chapter_notes: research/stage0/chapter-notes/wanming-0001-0002.md; wanming-0003-0005.md; wanming-0006-0010.md; wanming-0011-0015.md; wanming-0016-0020.md (same parent)
+- working_ledger: research/stage0/STATE_LEDGER_0001_0020.md
+- abilities_passed_stage1_5: 0
